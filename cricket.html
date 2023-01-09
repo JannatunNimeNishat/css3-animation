@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            /* background-color: rebeccapurple; */
+            border: 2px solid black;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: brown;
+            /* margin-left: auto;
+            margin-right: auto; */
+            position: relative;
+           left:554px;
+           transition:transform 1s ease .15s;
+        }
+        .field:hover .ball{
+            transform:translate(1500px,-200px) ;
+        }
+        
+        
+        .bat{
+            transition: transform 0.1s ease;
+        }
+
+
+        .field:hover .bat {
+            /* + means clock wise - means anti clock wise rotation*/
+            transform: rotate(-65deg);
+            /* -> normaliy rotation ta center ke kendro kore hoy but amra casci normal bat er moto rotation mane bat er handel ke kendro kore guruk to right.
+             -> transform-origin amader transform ta kake kendro kore suru hobe ta tik kore.*/
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="./images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

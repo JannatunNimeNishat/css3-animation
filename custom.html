@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom</title>
+    <style>
+        /* declearing variable */
+        :root{
+            --primary-color:purple ;
+            --single-border:3px solid green;
+        }
+        h1{
+            /* same attribute use hole last er ta pabe */
+            /* color: slateblue;
+            color: steelblue; */
+            /* taking color from variable */
+            /* color: var(--primary-color); */
+        }
+        #heading-3{
+            border: 2px solid var(--primary-color);
+        }
+        p{
+            /* border-bottom: 3px solid var(--primary-color); */
+           border-bottom: var(--single-border);
+        }
+        .box{
+            background-color: var(--primary-color);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>My strong heading</h1>
+    <h1>My strong heading</h1>
+    <h1>My strong heading</h1>
+    <h1>My strong heading</h1> -->
+
+    <h1 class="heading" id="heading-1">My Strong heading -1</h1>
+    <h1 class="heading" id="heading-2">My Strong heading -2</h1>
+    <h1 class="heading" id="heading-3">My Strong heading -3</h1>
+    <h1 class="heading" id="heading-4">My Strong heading -4</h1>
+    <p>My simple talk</p>
+    <div class="box">
+        <h3>My boxing box</h3>
+    </div>
+
+</body>
+</html>
